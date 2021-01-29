@@ -5,10 +5,10 @@ Hemsidan skall fungera som en värdepappersportfölj där du ska kunna se alla m
 Tips på aktier och fonder skall också, eventuellt, finnas tillgängliga.
 ## 2. Vyer (visa bildskisser på dina sidor).
 
-![hem](wsp hem.jpg)
-![logga](wsp logga in.jpg)
-![nyhetsflode](wsp nyhetsflöde.jpg)
-![vardepapper](wsp värdepapper.jpg)
+![hem](wsp hem.png)
+![logga](wsp logga in.png)
+![nyhetsflode](wsp nyhetsflöde.png)
+![vardepapper](wsp värdepapper.png)
 
 
 
