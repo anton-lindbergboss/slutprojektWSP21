@@ -20,6 +20,22 @@ get('/')  do
   slim(:home)
 end 
 
+get('/login') do
+  slim(:login)
+end
+
+get('/register') do
+  slim(:register)
+end
+
+get('/news') do
+  slim(:news)
+end
+
+get('/stocks') do
+  slim(:stocks)
+end
+
 get('/albums') do
   db = SQLite3::Database.new("db/chinook-crud.db")
   db.results_as_hash = true
