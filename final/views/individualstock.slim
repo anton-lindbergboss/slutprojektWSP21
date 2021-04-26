@@ -1,0 +1,14 @@
+
+ol
+
+    li Namn: #{result["name"]}
+    li Kortnamn: #{result["short_name"]}
+    li Pris: #{result["price"]}
+    - if result["market_id"] == 1
+        li Lista: Stockholmsbörsen
+    - if result["market_id"] == 2
+        li Lista: NYSE
+    - if result["market_id"] == 3
+        li Lista: NASDAQ
+    - if result["market_id"] == 4
+        li Lista: Japan Stock Exchange

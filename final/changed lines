@@ -1,0 +1,7 @@
+post('PLEJD/:stock_id/buy') do
+  slim(:buy)
+end
+
+                    p #{stock["content"]}
+                    form method="POST" action="PLEJD/#{stock["content"]}/buy"
+                        input type="submit" value="Buy"

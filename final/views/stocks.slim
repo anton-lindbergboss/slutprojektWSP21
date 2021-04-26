@@ -1,2 +1,34 @@
 h1 stocks
 
+h2 Aktielistan
+h3 Se hela listan av aktier listade på OPENSTOCKS här. Inkluderar aktiemarknader såsom Stockholmsbörsen, NYSE, NASDAQ och Japan Stock Exchange.
+table
+    tr
+    
+        th  
+        th Namn
+        th Senaste värde
+        th +/-%
+        th Lista
+
+    - stocks.each do |stock|
+            tr
+                td
+                    form method="POST" actions="/stocks/#{stock["stock_id"]}/buy"
+                        input type="submit" name="#{stock["stock_id"]}" value="Köp"
+                td
+                     a href="/stocks/#{stock["stock_id"]}" #{stock["short_name"]}
+                td = stock["price"]
+                td +/-%
+                - if stock["market_id"] == 1
+                    td Stockholmsbörsen
+                - elsif stock["market_id"] == 2
+                    td NYSE
+                - elsif stock["market_id"] == 3
+                    td NASDAQ
+                - elsif stock["market_id"] == 4
+                    td Japan Stock Exchange
+                    
+br
+br
+br

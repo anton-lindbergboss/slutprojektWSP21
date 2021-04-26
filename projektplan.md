@@ -14,6 +14,7 @@ Tips på aktier och fonder skall också, eventuellt, finnas tillgängliga.
 
 
 ## 3. Databas med ER-diagram (Bild på ER-diagram).
+Hittades inte, 
 ## 4. Arkitektur (Beskriv filer och mappar - vad gör/innehåller de?).
 
 
